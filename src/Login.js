@@ -40,7 +40,7 @@ const Login = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor:"fff",
+        backgroundColor:"f4f4f",
         padding: 30,
         paddingTop: 130,
     },
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     },
     button:{
         alignItems: "center",
-        backgroundColor: "#6200ea",
+        backgroundColor: "red",
         padding: 10,
         margin:30,
         borderRadius:10,

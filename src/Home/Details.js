@@ -6,7 +6,6 @@ import * as Location from 'expo-location';
 import ServiceList from './serviceList';
 import Loader from '../Loader';
 import Carousel from 'react-native-snap-carousel';
-// import { TouchableOpacity } from 'react-native-web';
 import { MaterialIcons } from '@expo/vector-icons';
 
 // create a component
@@ -29,7 +28,6 @@ const Details = () => {
     }, []);
 
     const RenderMarker = () => {
-        // console.log(ServiceList[0].coord['']);
         return (
             <View>
                 {
@@ -39,7 +37,6 @@ const Details = () => {
                                 key={index}
                                 coordinate={{ latitude: maker.coord['latitude'], longitude: maker.coord['longitude'] }}
                                 title={maker.name}
-                                image={maker.avatar}
                             />
                         )
 
@@ -53,30 +50,28 @@ const Details = () => {
     const renderCard = ({ item, index }) => {
         return (
             <View style={{ backgroundColor: 'white', borderRadius: 18, padding: 10, height: 150, display: 'flex', flexDirection: 'row' }}>
-        <View style={{ margin: 10 }} >
-          <Text style={{ fontSize: 20, width: Dimensions.get('window').width / 2, }}>{item.name}</Text>
-          <Text style={{ fontSize: 18, fontWeight: '100' }}>{item.category}</Text>
-          <Text style={{ fontSize: 16, color: '#00b8d4' }}>Reviews {item.review} <MaterialIcons name="star-rate" size={16} color="#00b8d4" /></Text>
-          <View style={{ position: 'absolute', bottom: 0,display:'flex',flexDirection:"row",margin:4 }}>
-            <TouchableOpacity style={{
-              backgroundColor: "#273568",
-              width: Dimensions.get('window').width / 3,
-              height:30,
-              alignItems: 'center',
-              justifyContent:'center',
-              borderRadius:5,
-              // margin:5
-              marginTop:10,
+                <View style={{ margin: 10 }} >
+                    <Text style={{ fontSize: 20, width: Dimensions.get('window').width / 2, }}>{item.name}</Text>
+                    <Text style={{ fontSize: 18, fontWeight: '100' }}>{item.category}</Text>
+                    <Text style={{ fontSize: 16, color: 'red' }}>Avalible Tickets {item.review} <MaterialIcons name="star-rate" size={16} color="red" /></Text>
+                    <View style={{ position: 'absolute', bottom: 0,display:'flex', flexDirection:"row",margin:4 }}>
+                        <TouchableOpacity style={{
+                        backgroundColor: "red",
+                        width: Dimensions.get('window').width / 3,
+                        height:30,
+                        alignItems: 'center',
+                        justifyContent:'center',
+                        borderRadius:5,
+                        marginTop:10,
 
-              
-            }}><Text style={{color:'white'}}>Book</Text>
-            </TouchableOpacity>
-            
-          </View>
-        </View>
-        <View style={{ backgroundColor: '#dedede', height: 60, borderRadius: 4, margin: 10, alignItems: "center" }}>
-          <Image style={{ resizeMode: 'contain', width: 40, height: 60 }} source={item.avatar} />
-        </View>
+                        
+                        }}><Text style={{color:'white'}}>Buy Tickets</Text>
+                        </TouchableOpacity>
+                        
+                    </View>
+                    </View>
+                    <View style={{ backgroundColor: '#dedede', height: 60, borderRadius: 4, margin: 10, alignItems: "center" }}>
+                </View>
        
       </View>
         )
@@ -90,8 +85,8 @@ const Details = () => {
                 ? <View>
                     <MapView style={styles.map}
                         initialRegion={{
-                            latitude: -26.110390,
-                            longitude: 28.053440,
+                            latitude: -32.907200,
+                            longitude: 17.990530,
                             latitudeDelta: 0.0922,
                             longitudeDelta: 0.0421,
                         }}

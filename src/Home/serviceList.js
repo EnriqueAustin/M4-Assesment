@@ -1,50 +1,30 @@
-import img1 from '../../assets/img1Service.png'
-import img2 from '../../assets/img2Service.png'
-import img3 from '../../assets/img1Service.png'
-import img4 from '../../assets/woman.png'
-
 const ServiceList = [
     {
-        name: "Clean withUS",
+        name: "Bitcoin Talk",
         email: "clean@gmail.com",
-        review: '3',
-        avatar:img1,
-        coord:{latitude:-26.118079,longitude:28.038936}
+        review: '37',
+        coord:{latitude:-32.914058,longitude:17.990005}
     },
     {
-        name: "HairStyle by Me",
+        name: "NFT Chat",
         email: "style@gmail.com",
-        review: '4',
-        avatar:img2,
-        coord:{latitude:-26.100750,longitude:28.070340}
+        review: '48',
+        coord:{latitude:-32.903393,longitude:18.002716}
 
 
     }, {
-        name: "Snappers",
+        name: "Photography",
         email: "snap@gmail.com",
-        review: '3',
-        avatar: img2,
-        coord:{latitude:-26.118079,longitude:28.038936}
+        review: '36',
+        coord:{latitude:-32.903393,longitude:17.994471}
 
 
     }, {
-        name: "TutorMe",
+        name: "Cash Flow Optimization",
         email: "tutor@gmail.com",
-        review: '4',
-        avatar:img2,
-        coord:{latitude:-26.097687,longitude:28.056401}
-
-
+        review: '14',
+        coord:{latitude:-32.916076,longitude:17.991379}
     },
-    {
-        name: "CnS",
-        email: "CnS@gmail.com",
-        review: '5',
-        avatar:img3,
-        coord:{latitude:-26.107167,longitude:28.044634}
-
-
-    }
 ]
 
 export default ServiceList;
